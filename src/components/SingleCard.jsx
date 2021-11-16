@@ -1,5 +1,6 @@
 import React from "react";
 import { clsx } from "@/utils";
+import cover from "@/image/cover.png";
 
 export function SingleCard({ card, handleChoice, flipped, disabled }) {
   return (
@@ -20,7 +21,7 @@ export function SingleCard({ card, handleChoice, flipped, disabled }) {
           "transition-all ease-in delay-[0.2s]",
           flipped ? "rotate-y-90 delay-[0s]" : ""
         )}
-        src="/src/image/cover.png"
+        src={cover}
         alt="cover"
       />
     </div>

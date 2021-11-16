@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
+import helmet from "@/image/helmet-1.png";
+import potion from "@/image/potion-1.png";
+import ring from "@/image/ring-1.png";
+import scroll from "@/image/scroll-1.png";
+import shield from "@/image/shield-1.png";
+import sword from "@/image/sword-1.png";
 
 const cardImages = [
-  { src: "/src/image/helmet-1.png", matched: false },
-  { src: "/src/image/potion-1.png", matched: false },
-  { src: "/src/image/ring-1.png", matched: false },
-  { src: "/src/image/scroll-1.png", matched: false },
-  { src: "/src/image/shield-1.png", matched: false },
-  { src: "/src/image/sword-1.png", matched: false },
+  { src: helmet, matched: false },
+  { src: potion, matched: false },
+  { src: ring, matched: false },
+  { src: scroll, matched: false },
+  { src: shield, matched: false },
+  { src: sword, matched: false },
 ];
 export function useMatchGame() {
   const [cards, setCards] = useState([]);
